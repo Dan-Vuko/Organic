@@ -1,0 +1,427 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organico</title>
+  </head>
+  <style>
+    /* colors
+      C1FBA4 -light green
+      7BF1A8 -darkgreen
+      f1faee -white
+      90f1ef -lightblue
+      FFD6E0 -pink
+      FFEF9F -yellow
+       */
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap");
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f6f9fc;
+    }
+
+    table {
+      border-spacing: 0;
+    }
+
+    td {
+      padding: 0;
+    }
+
+    img {
+      border: 0;
+    }
+
+    .wrapper {
+      width: 100%;
+      table-layout: fixed;
+      background-color: #f6f9fc;
+      padding-bottom: 40px;
+    }
+
+    /* our template */
+    .webkit {
+      max-width: 600px;
+      background-color: #ffffff;
+    }
+
+    .outer {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 600px;
+      border-spacing: 0;
+      font-family: "Open Sans Condensed", sans-serif;
+    }
+
+    .three-columns {
+      text-align: center;
+      font-size: 0;
+      padding-top: 40px;
+      padding-bottom: 30px;
+      background-color: #c1fba4;
+    }
+
+    .three-columns .column {
+      width: 100%;
+      max-width: 200px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .padding {
+      padding: 15px;
+    }
+
+    .three-columns .content {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000000;
+      font-size: 16px;
+      background-color: #7bf1a8;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    @media screen and (max-width: 600px) {
+    }
+
+    @media screen and (max-width: 400px) {
+      /* alignment gets messed up, why? */
+      .three-columns .column {
+        display: block;
+        /* why margin 0 auto and not text-align center? margin affects outside, text-align affects the inside of the div*/
+        margin: 0 auto;
+        width: 100%;
+        padding-right: 310px;
+        /* fixed it with this padding.. not sure if this is right though. */
+      }
+
+      img.third-img {
+        /* want to make the images bigger, but throws off alignment even more*/
+        width: 300px !important;
+        max-width: 300px !important;
+        text-align: center !important;
+      }
+
+      .padding {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+      }
+
+      p,
+      a,
+      h3 {
+        font-size: 25px !important;
+        line-height: 25px !important;
+      }
+
+      h1 {
+        font-size: 45px !important;
+      }
+
+      a.unsub {
+        font-size: 16px !important;
+      }
+    }
+  </style>
+
+  <body>
+    <!-- Tag that centers everything. -->
+    <center class="wrapper">
+      <!-- webkit is the layout, forms the basis of the template -->
+      <div class="webkit">
+        <!-- Main table holding all the rows -->
+        <table cellpadding="0" cellspacing="0" class="outer" align="center">
+          <!-- Heading -->
+          <tr>
+            <td>
+              <table
+                cellpadding="0"
+                cellspacing="0"
+                width="600"
+                height="10"
+                style="border-spacing: 0"
+              >
+                <td
+                  style="
+                    padding: 20px 10px 0px 10px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    background-color: #7bf1a8;
+                    color: #ffffff;
+                    font-family: 'Open Sans Condensed', sans-serif;
+                  "
+                >
+                  <h1>Organico</h1>
+                </td>
+              </table>
+            </td>
+          </tr>
+          <!-- Heading END! -->
+
+          <!-- Second Section -->
+          <tr>
+            <td
+              align="center"
+              width="600"
+              height="350"
+              style="
+                padding: 0px 0px 80px 0px;
+                background-image: url(https://images.unsplash.com/photo-1474440692490-2e83ae13ba29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+              "
+            >
+              <h1 style="color: #f1faee">Fresh Organic Produce</h1>
+              <h3 style="font-weight: 100; color: #f1faee">
+                Delivered to Your Door
+              </h3>
+              <br />
+              <a
+                class="btn"
+                href="#"
+                style="
+                  border-radius: 5px;
+                  font-family: 'Open Sans Condensed', sans-serif;
+                  color: #ffffff;
+                  font-size: 18px;
+                  background: #7bf1a8;
+                  padding: 10px 10px 10px 10px;
+                  text-decoration: none;
+                "
+                >Order Now!</a
+              >
+            </td>
+          </tr>
+          <!-- Second Section END -->
+          <!-- Responsive Section -->
+          <tr>
+            <td>
+              <table
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+                border-spacing="0"
+              >
+                <tr>
+                  <td class="three-columns">
+                    <!-- spacing for one column -->
+                    <table cellpadding="0" cellspacing="0" class="column">
+                      <tr>
+                        <td class="padding">
+                          <table
+                            cellpadding="0"
+                            cellspacing="0"
+                            class="content"
+                          >
+                            <!-- image row -->
+                            <tr>
+                              <td align="center">
+                                <a href="#"
+                                  ><img
+                                    class="third-img"
+                                    src="https://images.unsplash.com/photo-1534533983688-c7b8e13fd3b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                    width="150px"
+                                    style="max-width: 150px"
+                                    alt=""
+                                /></a>
+                              </td>
+                            </tr>
+                            <!-- image row END -->
+
+                            <!-- 2nd row -->
+                            <tr>
+                              <td style="padding: 10px; text-align: center">
+                                <p style="font-size: 18px; font-weight: bold">
+                                  Fresh Vegetables
+                                </p>
+                                <p style="font-size: 16px">
+                                  Seasonal produce of the greatest kind is what
+                                  you'll find here.
+                                </p>
+                                <a style="font-size: 18px" href="#"
+                                  >Learn More</a
+                                >
+                              </td>
+                            </tr>
+                            <!-- 2nd row END -->
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- Spacing for one column END -->
+                    <table cellpadding="0" cellspacing="0" class="column">
+                      <tr>
+                        <td class="padding">
+                          <table
+                            cellpadding="0"
+                            cellspacing="0"
+                            class="content"
+                          >
+                            <!-- image row -->
+                            <tr>
+                              <td align="center">
+                                <a href="#"
+                                  ><img
+                                    class="third-img"
+                                    src="https://images.unsplash.com/photo-1566804770468-867f6158bda5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                    width="150px"
+                                    style="max-width: 150px"
+                                    alt=""
+                                /></a>
+                              </td>
+                            </tr>
+                            <!-- image row END -->
+
+                            <!-- 2nd row -->
+                            <tr>
+                              <td style="padding: 10px; text-align: center">
+                                <p style="font-size: 17px; font-weight: bold">
+                                  Yummy Fruits
+                                </p>
+                                <p style="font-size: 16px">
+                                  Fruit that's beautifully ripe and ready to be
+                                  picked up and sent off.
+                                </p>
+                                <a style="font-size: 18px" href="#"
+                                  >Learn More</a
+                                >
+                              </td>
+                            </tr>
+                            <!-- 2nd row END -->
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- Spacing for one column END -->
+                    <table cellpadding="0" cellspacing="0" class="column">
+                      <tr>
+                        <td class="padding">
+                          <table
+                            cellpadding="0"
+                            cellspacing="0"
+                            class="content"
+                          >
+                            <!-- image row -->
+                            <tr>
+                              <td align="center">
+                                <a href="#"
+                                  ><img
+                                    class="third-img"
+                                    src="https://images.unsplash.com/photo-1506484381205-f7945653044d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                                    width="150px"
+                                    style="max-width: 150px"
+                                    alt=""
+                                /></a>
+                              </td>
+                            </tr>
+                            <!-- image row END -->
+
+                            <!-- 2nd row -->
+                            <tr>
+                              <td style="padding: 10px; text-align: center">
+                                <p style="font-size: 17px; font-weight: bold">
+                                  Local Farmers
+                                </p>
+                                <p style="font-size: 16px">
+                                  We place a great value on assisting
+                                  small-scale farmers in the area.
+                                </p>
+                                <a style="font-size: 18px" href="#"
+                                  >Learn More</a
+                                >
+                              </td>
+                            </tr>
+                            <!-- 2nd row END -->
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Footer -->
+          <!-- logos -->
+          <tr>
+            <td>
+              <table width="100%" style="border-spacing: 0">
+                <tr>
+                  <td
+                    style="
+                      background-color: #7bf1a8;
+                      padding: 15px;
+                      text-align: center;
+                    "
+                  >
+                    <p
+                      style="font-size: 18px; color: #ffff; margin-bottom: 13px"
+                    >
+                      Contact Us
+                    </p>
+                    <a href=""
+                      ><img src="img/white-facebook.png" width="30px" alt=""
+                    /></a>
+                    <a href=""
+                      ><img src="img/white-twitter.png" width="30px" alt=""
+                    /></a>
+                    <a href=""
+                      ><img src="img/white-linkedin.png" width="30px" alt=""
+                    /></a>
+                    <a href=""
+                      ><img src="img/white-instagram.png" width="30px" alt=""
+                    /></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- logos END -->
+          <tr>
+            <td style="background-color: #7bf1a8">
+              <table width="100%" style="border-spacing: 0">
+                <tr>
+                  <td
+                    style="
+                      padding: 20px;
+                      text-align: center;
+                      padding-bottom: 10px;
+                    "
+                  >
+                    <p style="font-size: 16px">
+                      123 Street Road, Melbourne, Victoria 3333
+                    </p>
+                    <p>
+                      <a href="mailto:ihuzaifasheikh@gmail.com"
+                        >admin@organico.com</a
+                      >
+                    </p>
+                    <p><a href="tel:1800101010">0420696778</a></p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center" style="text-align: center">
+                    <p>
+                      <a class="unsub" href="" style="font-size: 13px"
+                        >UNSUBSCRIBE</a
+                      >
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="20" style="background-color: #c1fba4"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </center>
+  </body>
+</html>
